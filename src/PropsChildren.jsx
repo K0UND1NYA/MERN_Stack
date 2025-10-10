@@ -33,6 +33,4 @@ function Parent() {
     </div>
   )
 }
-// prop drilling 
-//conditional rendering
 export default Parent
