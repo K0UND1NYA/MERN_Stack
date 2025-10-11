@@ -7,10 +7,11 @@ import Car from "./LogicalAnd"
 import Car0 from "./DestructuringOne";
 import Car1 from "./DestructuringTwo";
 import Parent1 from "./PropDrilling";
+import SimpleValidation from "./FormValidation"
 function App() {
   return (
     <div className="App">
-      <FirstComponent name="SSK"/>
+      {/* <FirstComponent name="SSK"/>
       <FirstComponent name="SSK"/>
       <FirstComponent name="SSK"/>
       <Fruit/>
@@ -20,7 +21,12 @@ function App() {
       <Car brand="Mustang"/>
       <Car0 brand="Ford" model="Mustang" color="Red" year="1969"/>
       <Car1 brand="Ford" model="Mustang" color="Red" year="1969"/>
-      <Parent1 studentNames="Shrinidhi S Koundinya" />
+      <Parent1 studentNames="Shrinidhi S Koundinya" /> */}
+      {/* <HtmlForms />
+      <HtmlForms/> */}
+      {/* <ControlledForm /> */}
+      {/* <TwoWayBinding /> */}
+      <SimpleValidation />
     </div>
   );
 }
