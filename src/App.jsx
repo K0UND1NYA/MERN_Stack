@@ -8,6 +8,8 @@ import Car0 from "./DestructuringOne";
 import Car1 from "./DestructuringTwo";
 import Parent1 from "./PropDrilling";
 import SimpleValidation from "./FormValidation"
+import External from "./External";
+import Temperature from "./Css";
 function App() {
   return (
     <div className="App">
@@ -26,7 +28,10 @@ function App() {
       <HtmlForms/> */}
       {/* <ControlledForm /> */}
       {/* <TwoWayBinding /> */}
-      <SimpleValidation />
+      {/* <SimpleValidation /> */}
+      {/* <Temperature value="30"/> */}
+      {/* <External/> */}
+      <Button />
     </div>
   );
 }

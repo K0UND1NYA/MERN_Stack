@@ -1,0 +1,14 @@
+.title{
+    color: rgb(191, 187, 215);
+    text-align: center;
+    font-weight: bold;
+    border: solid 2px green;
+    background-image: url('https://hdwallpaperim.com/wp-content/uploads/2017/09/17/61413-moon.jpg');
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: center;
+    border-radius: 4px;
+}
