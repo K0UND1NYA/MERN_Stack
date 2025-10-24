@@ -20,6 +20,7 @@ import Counter from "./HookOne/Reducer";
 import Counter1 from "./HookOne/IncrementByTwo";
 import WithUseMemo from "./HookOne/Memo";
 import Callback from "./HookOne/Callback";
+import CounterApp from "./HookOne/CounterApp";
 function App() {
   return (
     <div className="App">
@@ -50,7 +51,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Counter1 /> */}
       {/* <WithUseMemo/> */}
-      <Callback />
+      {/* <Callback /> */}
+      <CounterApp/>
     </div>
   );
 }
