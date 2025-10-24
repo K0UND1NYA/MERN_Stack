@@ -7,15 +7,16 @@ import Car from "./LogicalAnd"
 import Car0 from "./DestructuringOne";
 import Car1 from "./DestructuringTwo";
 import Parent1 from "./PropDrilling";
-import SimpleValidation from "./FormValidation"
-import External from "./External";
-import Temperature from "./Css";
-import Button from "./Button";
+// import SimpleValidation from "./FormValidation"
+// import External from "./External";
+// import Temperature from "./Css";
+// import Button from "./Button";
 import Component1 from "./HookOne/ContextApi";
 import Ref from "./HookOne/Ref";
 import AcessingDom from "./HookOne/AcessingDom";
 import Track from "./HookOne/Track";
 import Battery from "./HookOne/UseBattery";
+import Counter from "./HookOne/Reducer";
 function App() {
   return (
     <div className="App">
@@ -42,7 +43,8 @@ function App() {
       {/* <Ref/> */}
       {/* <AcessingDom /> */}
       {/* <Track/> */}
-      <Battery/>
+      {/* <Battery/> */}
+      <Counter />
     </div>
   );
 }
