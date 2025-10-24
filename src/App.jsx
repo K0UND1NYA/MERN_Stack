@@ -18,6 +18,7 @@ import Track from "./HookOne/Track";
 import Battery from "./HookOne/UseBattery";
 import Counter from "./HookOne/Reducer";
 import Counter1 from "./HookOne/IncrementByTwo";
+import WithUseMemo from "./HookOne/Memo";
 function App() {
   return (
     <div className="App">
@@ -46,7 +47,8 @@ function App() {
       {/* <Track/> */}
       {/* <Battery/> */}
       {/* <Counter /> */}
-      <Counter1 />
+      {/* <Counter1 /> */}
+      <WithUseMemo/>
     </div>
   );
 }
