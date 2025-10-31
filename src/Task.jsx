@@ -67,7 +67,7 @@ const PortalMessage = ({ children }) => {
   );
 };
 
-function Tasks() {
+function Task() {
   const [count, setCount] = useState(0);
   const [squareNumber, setSquareNumber] = useState(5);
   const [showPortal, setShowPortal] = useState(true);
@@ -80,9 +80,7 @@ function Tasks() {
 
   return (
     <>   
-      <button onClick={() => setCount(c => c + 1)}>
-        Change App State (Count: {count})
-      </button>
+      <label >Enter the number </label>
       <input 
         type="number" 
         value={squareNumber} 
@@ -106,4 +104,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default Task;

@@ -23,7 +23,15 @@ import Callback from "./HookOne/Callback";
 import CounterApp from "./HookOne/CounterApp";
 import Login from "./LoginPage";
 import Task from "./Task";
+import Table from "./Table";
 function App() {
+  const tablestyle={
+        borderCollapse:"collapse",
+        width:"70%",
+        margin :"20px Auto",
+        textAlign:"center",
+        border : "20px solid #000",
+    }
   return (
     <div className="App">
       {/* <FirstComponent name="SSK"/>
@@ -56,7 +64,12 @@ function App() {
       {/* <Callback /> */}
       {/* <CounterApp/> */}
       {/* <Login /> */}
-      <Task />
+      {/* <Task /> */}
+      <table style={tablestyle}>
+        <tbody>
+          <Table/>
+        </tbody>
+      </table>
     </div>
   );
 }
