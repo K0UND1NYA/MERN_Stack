@@ -22,6 +22,7 @@ import WithUseMemo from "./HookOne/Memo";
 import Callback from "./HookOne/Callback";
 import CounterApp from "./HookOne/CounterApp";
 import Login from "./LoginPage";
+import Task from "./Task";
 function App() {
   return (
     <div className="App">
@@ -54,7 +55,8 @@ function App() {
       {/* <WithUseMemo/> */}
       {/* <Callback /> */}
       {/* <CounterApp/> */}
-      <Login />;
+      {/* <Login /> */}
+      <Task />
     </div>
   );
 }
