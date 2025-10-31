@@ -90,7 +90,6 @@ function App() {
       {showModal && (
         <Modal onClose={() => setShowModal(false)}>
           <h3>This is rendered through a React Portal</h3>
-          <p>Click outside or press the close button to dismiss it.</p>
         </Modal>
       )}
     </div>
