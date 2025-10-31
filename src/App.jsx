@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import FirstComponent from "./FirstComponent";
 import Fruit from "./ClassOne"
 import Parent from "./PropsChildren";
@@ -24,14 +25,16 @@ import CounterApp from "./HookOne/CounterApp";
 import Login from "./LoginPage";
 import Task from "./Task";
 import Table from "./Table";
+import Modal from "./Modal";
 function App() {
-  const tablestyle={
-        borderCollapse:"collapse",
-        width:"70%",
-        margin :"20px Auto",
-        textAlign:"center",
-        border : "20px solid #000",
-    }
+  // const tablestyle={
+  //       borderCollapse:"collapse",
+  //       width:"70%",
+  //       margin :"20px Auto",
+  //       textAlign:"center",
+  //       border : "20px solid #000",
+  //   }
+  const [showModal,setShowModal]=useState(false);
   return (
     <div className="App">
       {/* <FirstComponent name="SSK"/>
@@ -65,11 +68,31 @@ function App() {
       {/* <CounterApp/> */}
       {/* <Login /> */}
       {/* <Task /> */}
-      <table style={tablestyle}>
+      {/* <table style={tablestyle}>
         <tbody>
           <Table/>
         </tbody>
-      </table>
+      </table> */}
+      <button
+        style={{
+          background: "blue",
+          color: "white",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}
+        onClick={() => setShowModal(true)}
+      >
+        Show Modal
+      </button>
+
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)}>
+          <h3>This is rendered through a React Portal</h3>
+          <p>Click outside or press the close button to dismiss it.</p>
+        </Modal>
+      )}
     </div>
   );
 }
